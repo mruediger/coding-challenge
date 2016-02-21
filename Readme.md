@@ -23,6 +23,6 @@ I also had some trouble getting ``dockerng`` and ``dockerio`` working. In the en
 
 The older, soon to be deprecated ``dockerio`` worked - till I tried to update the docker image. Using the ``docker.pulled`` with the ``force`` parameter produced an error when running ``docker.pull`` that I couldn't resolve. I had to omit the parameter which results in Salt not noticing image updates. Only having 1 whole day of Salt experience, I did not file an issue on Github. The most probable cause in my opinion is a case of pebkac.
 
-I intentionally avoided using variables throughout the Formulas. With only one service running, they only provide confusion and no benefit. As a long time Java developer, I often saw what happens if you try to abstract code before knowing where it will go.
+I intentionally avoided using variables throughout the Formulas. Having been a Java developer for a long time, I had the chance to see what happens when you abstract code before you know how it will evolve. It doesn't end pretty.
 
 All that said, I really liked working with Salt. The folder layout makes a lot more sense in Salt than in Ansible and the documentation is definitely better.
