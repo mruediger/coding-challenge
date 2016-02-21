@@ -11,7 +11,9 @@ django_hello-world-container:
 django_hello-world:
   docker.running:
     - image: mruediger/django_hello-world
-    - container: mruediger/django_hello-worl
-    - hostname: mruediger/django_hello-world
+    - ports:
+        - "8000/tcp":
+            HostIp: ""
+            HostPort: "80"
     - watch:
       - docker: django_hello-world-container
