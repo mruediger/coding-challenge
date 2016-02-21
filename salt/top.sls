@@ -1,4 +1,4 @@
 base:
   '*':
     - docker
-    - containers
+    - django-hello-world
